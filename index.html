@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LMS KKA SMAN 2 Tualang v4.0.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login" class="login"><div class="loginbox">
+<section class="cover"><div class="mark">KKA</div><h1>LMS KKA<br>SMAN 2 Tualang</h1><p><b>Koding dan Kecerdasan Artifisial</b><br>Kelas X • Fase E • Kurikulum Merdeka</p><p>Platform pembelajaran digital terintegrasi untuk materi, LKPD, asesmen, presensi, refleksi, dan analitik pembelajaran.</p><p style="font-size:13px;margin-top:35px">Guru: Hedi Aprison, ST, M.Pd, Gr</p></section>
+<section class="form"><h2>Masuk ke LMS</h2><p class="muted">Pilih portal yang akan digunakan.</p>
+<div class="tabs"><button type="button" class="btn primary" id="studentTab">Siswa</button><button type="button" class="btn secondary" id="teacherTab">Guru/Admin</button></div>
+<div id="studentForm"><div class="field"><label>Nama Lengkap</label><input id="sn" placeholder="Nama siswa"></div><div class="field"><label>NISN</label><input id="si" placeholder="NISN"></div><div class="field"><label>Kelas</label><select id="sc"><option value="">Pilih kelas</option><option>X-1</option><option>X-2</option><option>X-3</option><option>X-4</option><option>X-5</option><option>X-6</option></select></div><button class="btn primary" style="width:100%" onclick="loginStudent()">Masuk sebagai Siswa →</button></div>
+<div id="teacherForm" class="hide"><div class="field"><label>Username</label><input id="tu" value="guru"></div><div class="field"><label>Password</label><input id="tp" type="password" value="KKA2026"></div><button class="btn primary" style="width:100%" onclick="loginTeacher()">Masuk Dashboard Guru →</button><p class="muted" style="font-size:12px">Demo: guru / KKA2026</p></div>
+</section></div></div>
+
+<div id="app" class="hide"><aside class="side"><div class="brand"><div class="bi">K</div><div><b>LMS KKA</b><small>SMAN 2 Tualang</small></div></div><nav id="nav" class="nav"></nav>
+<div style="position:absolute;left:14px;right:14px;bottom:48px">
+<button id="logoutBtn" class="btn danger" style="width:100%">↪ Keluar</button>
+</div>
+</aside><main class="main"><header class="top"><b id="pt">Dashboard</b><span id="who"></span></header><div id="content" class="content"></div></main></div>
+<div id="toast" class="toast hide"></div>
+<script src="script.js"></script>
+</body></html>
